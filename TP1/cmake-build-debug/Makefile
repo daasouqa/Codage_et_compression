@@ -122,6 +122,33 @@ TP1/fast:
 	$(MAKE) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/build
 .PHONY : TP1/fast
 
+ReductionCouleur.obj: ReductionCouleur.cpp.obj
+
+.PHONY : ReductionCouleur.obj
+
+# target to build an object file
+ReductionCouleur.cpp.obj:
+	$(MAKE) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/ReductionCouleur.cpp.obj
+.PHONY : ReductionCouleur.cpp.obj
+
+ReductionCouleur.i: ReductionCouleur.cpp.i
+
+.PHONY : ReductionCouleur.i
+
+# target to preprocess a source file
+ReductionCouleur.cpp.i:
+	$(MAKE) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/ReductionCouleur.cpp.i
+.PHONY : ReductionCouleur.cpp.i
+
+ReductionCouleur.s: ReductionCouleur.cpp.s
+
+.PHONY : ReductionCouleur.s
+
+# target to generate assembly for a file
+ReductionCouleur.cpp.s:
+	$(MAKE) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/ReductionCouleur.cpp.s
+.PHONY : ReductionCouleur.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -158,6 +185,9 @@ help:
 	@echo ... edit_cache
 	@echo ... TP1
 	@echo ... rebuild_cache
+	@echo ... ReductionCouleur.obj
+	@echo ... ReductionCouleur.i
+	@echo ... ReductionCouleur.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
