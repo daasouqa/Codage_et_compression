@@ -4,9 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/KmeanSeg.cpp" "C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/CMakeFiles/TP1.dir/KmeanSeg.cpp.obj"
-  "C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/ReductionCouleur.cpp" "C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/CMakeFiles/TP1.dir/ReductionCouleur.cpp.obj"
-  "C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/main.cpp" "C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/CMakeFiles/TP1.dir/main.cpp.obj"
+  "/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/256MeanSegmentation.cpp" "/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/CMakeFiles/TP1.dir/256MeanSegmentation.cpp.o"
+  "/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/2MeanSegmentation.cpp" "/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/CMakeFiles/TP1.dir/2MeanSegmentation.cpp.o"
+  "/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/KmeanSeg.cpp" "/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/CMakeFiles/TP1.dir/KmeanSeg.cpp.o"
+  "/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/ReductionCouleur.cpp" "/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/CMakeFiles/TP1.dir/ReductionCouleur.cpp.o"
+  "/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/SegmentationKmean.cpp" "/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/CMakeFiles/TP1.dir/SegmentationKmean.cpp.o"
+  "/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/main.cpp" "/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/CMakeFiles/TP1.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -32,7 +32,7 @@ int main(int argc, char* argv[]) {
     sscanf (argv[1],"%s",cNomImgLue) ;
     sscanf (argv[2],"%s",cNomImgEcrite);
     
-    OCTET *ImgIn, *ImgOut;
+    OCTET *ImgIn, *ImgOut, *leftClusterImg, *rightClusterImg;
     
     lire_nb_lignes_colonnes_image_ppm(cNomImgLue, &nH, &nW);
     nTaille = nH * nW;
@@ -40,8 +40,8 @@ int main(int argc, char* argv[]) {
     int nTaille3 = nTaille * 3;
     allocation_tableau(ImgIn, OCTET, nTaille3);
     lire_image_ppm(cNomImgLue, ImgIn, nH * nW);
-//    allocation_tableau(leftClusterImg, OCTET, nTaille3);
-//    allocation_tableau(rightClusterImg, OCTET, nTaille3);
+    allocation_tableau(leftClusterImg, OCTET, nTaille3);
+    allocation_tableau(rightClusterImg, OCTET, nTaille3);
     allocation_tableau(ImgOut, OCTET, nTaille3);
     
     
@@ -69,7 +69,7 @@ int main(int argc, char* argv[]) {
     }
     
     /// Avec 256 couleurs
-    
+
     for (int i = 0; i < nTaille3; i += 3) {
         int indiceMin = 0;
         int distMin = 5000;
@@ -85,7 +85,7 @@ int main(int argc, char* argv[]) {
     }
     
     
-    /// Avec 2 couleurs
+//    /// Avec 2 couleurs
 //    for (int i = 0; i < nTaille3; i += 3) {
 //        if (distance(ImgIn[i], ImgIn[i + 1], ImgIn[i + 2], couleur1[0], couleur1[1], couleur1[2]) <
 //            distance(ImgIn[i], ImgIn[i + 1], ImgIn[i + 2], couleur2[0], couleur2[1], couleur2[2])) {
@@ -103,7 +103,12 @@ int main(int argc, char* argv[]) {
 
 //    ecrire_image_ppm(left, leftClusterImg,  1, leftCluster.size()/3);
 //    ecrire_image_ppm(right, rightClusterImg,  1, rightCluster.size()/3);
-    ecrire_image_ppm("256colors.ppm", ImgOut, nH,nW);
+    
+
+    
+
+    char fileName[250] = "2Colors.ppm";
+    ecrire_image_ppm(fileName, ImgOut, nH, nW);
     free(ImgIn);
     return 1;
 }

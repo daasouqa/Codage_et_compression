@@ -8,90 +8,101 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug"/>
+				<Option working_dir="/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="TP1">
-				<Option output="C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/TP1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 TP1"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="TP1/fast">
-				<Option output="C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/TP1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 TP1/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug"/>
+				<Option working_dir="/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TP1">
+				<Option output="/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/TP1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 TP1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TP1/fast">
+				<Option output="/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/TP1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 TP1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/KmeanSeg.cpp">
+		<Unit filename="/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/256MeanSegmentation.cpp">
 			<Option target="TP1"/>
 		</Unit>
-		<Unit filename="C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/ReductionCouleur.cpp">
+		<Unit filename="/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/2MeanSegmentation.cpp">
 			<Option target="TP1"/>
 		</Unit>
-		<Unit filename="C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/main.cpp">
+		<Unit filename="/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/KmeanSeg.cpp">
 			<Option target="TP1"/>
 		</Unit>
-		<Unit filename="C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/CMakeLists.txt">
+		<Unit filename="/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/ReductionCouleur.cpp">
+			<Option target="TP1"/>
+		</Unit>
+		<Unit filename="/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/SegmentationKmean.cpp">
+			<Option target="TP1"/>
+		</Unit>
+		<Unit filename="/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/main.cpp">
+			<Option target="TP1"/>
+		</Unit>
+		<Unit filename="/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

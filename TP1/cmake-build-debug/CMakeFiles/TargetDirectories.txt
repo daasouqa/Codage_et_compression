@@ -1,3 +1,3 @@
-C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/CMakeFiles/TP1.dir
-C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/CMakeFiles/TP1.dir
+/home/e20180009520/Documents/IMAGINA/S3/Codage_et_compression/TP1/cmake-build-debug/CMakeFiles/edit_cache.dir

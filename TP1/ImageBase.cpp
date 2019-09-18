@@ -14,7 +14,7 @@
 *******************************************************************************/
 
 #include "ImageBase.h"
-#include "image_ppm.h"
+#include "Image_ppm.h"
 
 
 
