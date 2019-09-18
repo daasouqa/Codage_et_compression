@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/KmeanSeg.cpp" "C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/CMakeFiles/TP1.dir/KmeanSeg.cpp.obj"
   "C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/ReductionCouleur.cpp" "C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/CMakeFiles/TP1.dir/ReductionCouleur.cpp.obj"
   "C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/main.cpp" "C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/cmake-build-debug/CMakeFiles/TP1.dir/main.cpp.obj"
   )

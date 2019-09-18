@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/KmeanSeg.cpp">
+			<Option target="TP1"/>
+		</Unit>
 		<Unit filename="C:/Users/Ben3i/Documents/IMAGINA/M2/Codage et compression/TP1/ReductionCouleur.cpp">
 			<Option target="TP1"/>
 		</Unit>

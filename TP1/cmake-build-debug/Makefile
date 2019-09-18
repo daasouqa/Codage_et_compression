@@ -122,6 +122,33 @@ TP1/fast:
 	$(MAKE) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/build
 .PHONY : TP1/fast
 
+KmeanSeg.obj: KmeanSeg.cpp.obj
+
+.PHONY : KmeanSeg.obj
+
+# target to build an object file
+KmeanSeg.cpp.obj:
+	$(MAKE) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/KmeanSeg.cpp.obj
+.PHONY : KmeanSeg.cpp.obj
+
+KmeanSeg.i: KmeanSeg.cpp.i
+
+.PHONY : KmeanSeg.i
+
+# target to preprocess a source file
+KmeanSeg.cpp.i:
+	$(MAKE) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/KmeanSeg.cpp.i
+.PHONY : KmeanSeg.cpp.i
+
+KmeanSeg.s: KmeanSeg.cpp.s
+
+.PHONY : KmeanSeg.s
+
+# target to generate assembly for a file
+KmeanSeg.cpp.s:
+	$(MAKE) -f CMakeFiles\TP1.dir\build.make CMakeFiles/TP1.dir/KmeanSeg.cpp.s
+.PHONY : KmeanSeg.cpp.s
+
 ReductionCouleur.obj: ReductionCouleur.cpp.obj
 
 .PHONY : ReductionCouleur.obj
@@ -185,6 +212,9 @@ help:
 	@echo ... edit_cache
 	@echo ... TP1
 	@echo ... rebuild_cache
+	@echo ... KmeanSeg.obj
+	@echo ... KmeanSeg.i
+	@echo ... KmeanSeg.s
 	@echo ... ReductionCouleur.obj
 	@echo ... ReductionCouleur.i
 	@echo ... ReductionCouleur.s
