@@ -44,10 +44,10 @@ int main(int argc, char* argv[]) {
     
     
     
-    char cNomImgLue[250], cNomImgEcrite[250];
+    char cNomImgLue[250], cNomImgEcrite[250], cNomIndex[250];
     int nH, nW, nTaille;
-    if (argc != 3) {
-        printf("Usage: ImageIn.ppm ImageOut.ppm\n");
+    if (argc != 4) {
+        printf("Usage: ImageIn.ppm ImageOut.ppm Index.pgm\n");
         exit(1);
     }
     
@@ -57,6 +57,7 @@ int main(int argc, char* argv[]) {
     
     sscanf(argv[1], "%s", cNomImgLue);
     sscanf(argv[2], "%s", cNomImgEcrite);
+    sscanf(argv[3], "%s", cNomIndex);
     
     OCTET *ImgIn, *ImgOut;
     
@@ -68,25 +69,32 @@ int main(int argc, char* argv[]) {
     lire_image_ppm(cNomImgLue, ImgIn, nH * nW);
     allocation_tableau(ImgOut, OCTET, nTaille3);
     
+    ImageBase index(nW, nH, false);
     
     /// Sélection des 256 premières couleurs et affectation aux clusters
     
-    int decalage = 0;
+    int decalage = nTaille3 / (256 * 3);
     color clusters[256];
     for (int j = 0; j < 256; j += 3) {
         clusters[j].r = ImgIn[j + decalage];
         clusters[j].g = ImgIn[j + decalage + 1];
         clusters[j].b = ImgIn[j + decalage + 2];
         decalage += 3;
+    
+//        clusters[j].r = rand() % 256;
+//        clusters[j].g = rand() % 256;
+//        clusters[j].b = rand() % 256;
     }
     
-    for (int k = 0; k < 2; ++k) {
+    for (int k = 0; k < 3; ++k) {
+        std::cout << k << std::endl;
     
         /// K-Mean algo
-        int bestCluster = 0;
-        double distMin = distanceColor(ImgIn[0], ImgIn[1], ImgIn[2], clusters[0].r, clusters[0].g, clusters[0].b);
-        for (int i = 1; i < nTaille3; i += 3) {
-            for (int j = 0; j < 256; ++j) {
+        
+        for (int i = 0; i < nTaille3; i += 3) {
+            int bestCluster = 0;
+            double distMin = distanceColor(ImgIn[i], ImgIn[i+1], ImgIn[i+2], clusters[0].r, clusters[0].g, clusters[0].b);
+            for (int j = 1; j < 256; ++j) {
                 if (distanceColor(ImgIn[i], ImgIn[i + 1], ImgIn[i + 2], clusters[j].r, clusters[j].g, clusters[j].b) <
                     distMin) {
                     bestCluster = j;
@@ -97,16 +105,41 @@ int main(int argc, char* argv[]) {
         
             color clusterCenter;
             clusterCenter.r = (clusters[bestCluster].r + ImgIn[i]) / 2;
-            clusterCenter.g = (clusters[bestCluster].r + ImgIn[i + 1]) / 2;
-            clusterCenter.b = (clusters[bestCluster].r + ImgIn[i + 2]) / 2;
+            clusterCenter.g = (clusters[bestCluster].g + ImgIn[i + 1]) / 2;
+            clusterCenter.b = (clusters[bestCluster].b + ImgIn[i + 2]) / 2;
             clusters[bestCluster] = clusterCenter;
         }
     }
     
-    
+    int cptH = 0, cptW = 0;
     for (int l = 0; l < nTaille3; l += 3) {
+        int bestCluster = 0;
+        int distMin = distanceColor(ImgIn[l], ImgIn[l+1], ImgIn[l+2], clusters[0].r, clusters[0].g, clusters[0].b);
+
+        for (int i = 1; i < 256; i++) {
+            if (distanceColor(ImgIn[l], ImgIn[l + 1], ImgIn[l + 2], clusters[i].r, clusters[i].g, clusters[i].b) < distMin){
+                distMin = distanceColor(ImgIn[l], ImgIn[l + 1], ImgIn[l + 2], clusters[i].r, clusters[i].g, clusters[i].b);
+                bestCluster = i;
+            }
+        }
+        ImgOut[l] = clusters[bestCluster].r;
+        ImgOut[l + 1] = clusters[bestCluster].g;
+        ImgOut[l + 2] = clusters[bestCluster].b;
     
+        cptW++;
+        index[cptH][cptW] = bestCluster;
+        if (cptW >= index.getWidth()) {
+            cptW = 0;
+            cptH++;
+        }
     }
     
+    index.save(cNomIndex);
+    ecrire_image_ppm(cNomImgEcrite, ImgOut, nH, nW);
     
+    return 1;
 }
+
+//PSNR 255 au carré sur EQM
+// EQM 1/N de la somme du carré de P'(i,j) - P(i,j)
+
