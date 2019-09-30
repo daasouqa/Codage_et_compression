@@ -3,4 +3,4 @@ project(TP2)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(TP2 ChangementEspaceCouleurs.cpp)
+add_executable(TP2 ChangementEspaceCouleurs.cpp ChangementEspaceCouleurV2.cpp TestIB.cpp)

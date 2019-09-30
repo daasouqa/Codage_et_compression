@@ -1,5 +1,5 @@
 //
-// Created by Ines Benghezal on 29/09/2019.
+// Created by Inès Benghezal on 30/09/19.
 //
 // Copyright (c) 2019 Inès Benghezal. All rights reserved.
 //
@@ -51,7 +51,6 @@ int main(int argc, char* argv[]) {
     
     OCTET *ImgIn, *ImgOut;
     
-    lire_nb_lignes_colonnes_image_ppm(cNomImgLue, &nH, &nW);
     nTaille = nH * nW;
     
     int nTaille3 = nTaille * 3;
@@ -59,24 +58,23 @@ int main(int argc, char* argv[]) {
     lire_image_ppm(cNomImgLue, ImgIn, nH * nW);
     allocation_tableau(ImgOut, OCTET, nTaille3);
     
-    for (int i = 0; i < nTaille3; i += 12) {
-        ImgOut[i] = ImgIn[i];
-        ImgOut[i + 1] = ImgIn[i + 1];
-        ImgOut[i + 2] = ImgIn[i + 2];
-        ImgOut[i + 3] = ImgIn[i];
-        ImgOut[i + 4] = ImgIn[i + 4];
-        ImgOut[i + 5] = ImgIn[i + 2];
-        ImgOut[i + 6] = ImgIn[i];
-        ImgOut[i + 7] = ImgIn[i + 7];
-        ImgOut[i + 8] = ImgIn[i + 2];
-        ImgOut[i + 9] = ImgIn[i];
-        ImgOut[i + 10] = ImgIn[i + 10];
-        ImgOut[i + 11] = ImgIn[i + 2];
+    OCTET *RED, *GREEN, *BLUE;
+    
+//    allocation_tableau(RED, OCTET, nTaille3/4);
+    allocation_tableau(GREEN, OCTET, nTaille3);
+//    allocation_tableau(BLUE, OCTET, nTaille3/4);
+    
+    for (int i = 0; i < nTaille3; i += 3) {
+        GREEN[i] = 0;
+        GREEN[i + 1] = ImgIn[i + 1];
+        GREEN[i + 2] = 0;
     }
     
     
-    cout << "PSNR = " << PSNR(ImgIn, ImgOut, nTaille3) << endl;
     
-    ecrire_image_ppm(cNomImgEcrite, ImgOut, nH, nW);
-    free(ImgIn);
+//    cout << "PSNR = " << PSNR(ImgIn, ImgOut, nTaille3);
+    
+    ecrire_image_ppm(cNomImgEcrite, GREEN, nH, nW);
+//    ecrire_image_ppm(cNomImgEcrite, ImgOut, nH, nW);
+//    free(ImgIn);
 }
