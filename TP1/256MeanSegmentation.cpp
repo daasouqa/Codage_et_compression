@@ -13,6 +13,14 @@ double distanceColor(int red1, int green1, int blue1, int red2, int green2, int 
     return sqrt(pow(red1 - red2, 2) + pow(green1 - green2, 2) + pow(blue1 - blue2, 2));
 }
 
+double PSNR(OCTET* a, OCTET* b,int taille3){
+    double EQM = 0;
+    for (int i = 0; i < taille3; i += 3) {
+        EQM += pow(distanceColor(a[i], a[i + 1], a[i + 2], b[i], b[i + 1], b[i + 2]),2);
+    }
+    EQM = EQM / (taille3 / 3);
+    return (10 * log10(pow(255, 2) / EQM));
+}
 /// Création de la structure "couleur"
 struct color {
     OCTET r;
@@ -134,12 +142,12 @@ int main(int argc, char* argv[]) {
         }
     }
     
+    cout << "PSNR = " << PSNR(ImgIn, ImgOut, nTaille3);
+    
     index.save(cNomIndex);
     ecrire_image_ppm(cNomImgEcrite, ImgOut, nH, nW);
     
     return 1;
 }
 
-//PSNR 255 au carré sur EQM
-// EQM 1/N de la somme du carré de P'(i,j) - P(i,j)
 
