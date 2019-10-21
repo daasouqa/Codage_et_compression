@@ -9,7 +9,7 @@
 #include <vector>
 
 
-#include "./ImageBase.cpp"
+#include "../Sources/ImageBase.cpp"
 
 using namespace std;
 
@@ -70,6 +70,22 @@ double entropy(ImageBase ImgIn){
     return -h;
 }
 
+int rawAttack(ImageBase imageBase){
+    float maxEntropy = 0;
+    int key = 0;
+    for (int i = 0; i < 100; ++i) {
+        ImageBase prgn = PRNG(i, imageBase.getWidth(), imageBase.getHeight());
+        ImageBase decrypted = XOR(imageBase, prgn, "test.pgm");
+        float currentEntropy = entropy(decrypted);
+        if (currentEntropy > maxEntropy) {
+            key = i;
+            maxEntropy = currentEntropy;
+        }
+    }
+    return key;
+    
+}
+
 int main(int argc, char* argv[]) {
     
     
@@ -90,10 +106,16 @@ int main(int argc, char* argv[]) {
     
     ImageBase prgnSeq = PRNG(n, ImgIn.getWidth(), ImgIn.getHeight());
     
-//    ImageBase ImgOut = XOR(ImgIn, prgnSeq, "chiffrement.pgm");
+    ImageBase ImgOut = XOR(ImgIn, prgnSeq, "chiffrement.pgm");
     
-    ImageBase reconstruction = XOR(XOR(ImgIn, prgnSeq, "chiffrement.pgm"), prgnSeq, "reconstruction.pgm");
+    int key = rawAttack(ImgOut);
     
+    std::cout << "Key after attack = " << key << std::endl;
+    
+    ImageBase attack = XOR(ImgOut, PRNG(key, ImgOut.getWidth(), ImgOut.getHeight()), "attack.pgm");
+    
+//    ImageBase reconstruction = XOR(XOR(ImgIn, prgnSeq, "chiffrement.pgm"), prgnSeq, "reconstruction.pgm");
+
     
 
 }
